@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/carli/Desktop/openGL/glPaintTest/build/cmake_install.cmake",
+		"C:/Users/carli/Desktop/openGL/glPaintTest/build/libs/glfw/cmake_install.cmake",
+		"C:/Users/carli/Desktop/openGL/glPaintTest/build/libs/glfw/src/cmake_install.cmake",
+		"C:/Users/carli/Desktop/openGL/glPaintTest/build/libs/glfw/docs/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
