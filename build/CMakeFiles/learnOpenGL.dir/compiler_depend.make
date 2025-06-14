@@ -85,6 +85,7 @@ CMakeFiles/learnOpenGL.dir/main.cpp.obj: C:/Users/carli/Desktop/openGL/glPaintTe
   c:/mingw/include/errno.h \
   c:/mingw/include/io.h \
   c:/mingw/include/locale.h \
+  c:/mingw/include/math.h \
   c:/mingw/include/msvcrtver.h \
   c:/mingw/include/process.h \
   c:/mingw/include/sdkddkver.h \
@@ -143,6 +144,7 @@ CMakeFiles/learnOpenGL.dir/main.cpp.obj: C:/Users/carli/Desktop/openGL/glPaintTe
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/cctype \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/cerrno \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/clocale \
+  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/cmath \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/cstdint \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/cstdio \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/cstdlib \
@@ -162,6 +164,7 @@ CMakeFiles/learnOpenGL.dir/main.cpp.obj: C:/Users/carli/Desktop/openGL/glPaintTe
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/iosfwd \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/iostream \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/istream \
+  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/math.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/atomic_word.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++allocator.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++config.h \
@@ -301,6 +304,8 @@ c:/mingw/include/rpcdcep.h:
 
 c:/mingw/include/rpcndr.h:
 
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/cmath:
+
 c:/mingw/include/rpcnsi.h:
 
 c:/mingw/include/rpcnsip.h:
@@ -358,6 +363,8 @@ c:/mingw/include/ctype.h:
 c:/mingw/include/direct.h:
 
 c:/mingw/include/errno.h:
+
+c:/mingw/include/math.h:
 
 c:/mingw/include/sys/stat.h:
 
@@ -492,6 +499,8 @@ c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/iosfwd:
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/iostream:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/istream:
+
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/math.h:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++allocator.h:
 

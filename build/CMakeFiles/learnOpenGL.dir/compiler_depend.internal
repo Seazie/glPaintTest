@@ -87,6 +87,7 @@ CMakeFiles/learnOpenGL.dir/main.cpp.obj
  c:/mingw/include/errno.h
  c:/mingw/include/io.h
  c:/mingw/include/locale.h
+ c:/mingw/include/math.h
  c:/mingw/include/msvcrtver.h
  c:/mingw/include/process.h
  c:/mingw/include/sdkddkver.h
@@ -145,6 +146,7 @@ CMakeFiles/learnOpenGL.dir/main.cpp.obj
  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/cctype
  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/cerrno
  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/clocale
+ c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/cmath
  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/cstdint
  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/cstdio
  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/cstdlib
@@ -164,6 +166,7 @@ CMakeFiles/learnOpenGL.dir/main.cpp.obj
  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/iosfwd
  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/iostream
  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/istream
+ c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/math.h
  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/atomic_word.h
  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++allocator.h
  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++config.h
