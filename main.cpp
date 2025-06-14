@@ -8,18 +8,19 @@ void processInput(GLFWwindow *window);
 
 const char *vertexShaderSource = "#version 330 core\n"
 "layout(location = 0) in vec3 aPos;\n"
-"out vec4 vertexColor;"
+"layout(location = 1) in vec3 aColor;"
+"out vec3 ourColor;"
 "void main()\n"
 "{\n"
 "   gl_Position = vec4(aPos, 1.0);\n"
-"   vertexColor = vec4(0.5, 0.0, 0.0, 1.0);"
+"   ourColor = aColor;"
 "}\0";
 const char *fragShaderSource = "#version 330 core\n"
 "out vec4 FragColor;\n"
-"uniform vec4 ourColor;"
+"in vec3 ourColor;"
 "void main()\n"
 "{\n"
-"   FragColor = ourColor;\n"
+"   FragColor = vec4(ourColor, 1.0);\n"
 "}\0";
 
 
@@ -102,10 +103,10 @@ int main()
     glDeleteShader(greenFragShader);
     
 
-    float triangle1[] = {
-        0.0f, 0.5f, 0.0f,
-        0.5, -0.5f, 0.0f,
-        -0.5f, -0.5f, 0.0f
+    float vertices[] = {
+        0.0f, 0.5f, 0.0f, 1.0f, 0.0f, 0.0f,
+        0.5, -0.5f, 0.0f, 0.0f, 1.0f, 0.0f,
+        -0.5f, -0.5f, 0.0f, 0.0f, 0.0f, 1.0f
     };
 
     //initialization of Vertex Buffer Object and Vertex Array Object
@@ -116,9 +117,14 @@ int main()
     //bind first VAO and VBO
     glBindVertexArray(VAO);
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(triangle1), triangle1, GL_STATIC_DRAW);
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+    //position attribute. To get to the next position we have to move six spaces, to skip over the color
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
+    //color attribute
+    //we have an offset (at the end) because position holds 3 "indeces" first, so we have to skip those 3
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3* sizeof(float)));
+    glEnableVertexAttribArray(1);
 
     //we can unbind the VBO buffer because it is now registered with glVertexAttribPointer
     glBindBuffer(GL_ARRAY_BUFFER, 0);
