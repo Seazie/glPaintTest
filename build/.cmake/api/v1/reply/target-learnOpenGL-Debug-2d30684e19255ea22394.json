@@ -36,13 +36,13 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 15,
+				"line" : 16,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 19,
+				"line" : 20,
 				"parent" : 0
 			},
 			{
@@ -52,9 +52,15 @@
 				"parent" : 0
 			},
 			{
-				"command" : 3,
+				"command" : 2,
 				"file" : 0,
 				"line" : 12,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 13,
 				"parent" : 0
 			}
 		]
@@ -76,10 +82,14 @@
 				},
 				{
 					"backtrace" : 5,
+					"path" : "C:/Users/carli/Desktop/openGL/glPaintTest"
+				},
+				{
+					"backtrace" : 6,
 					"path" : "C:/Users/carli/Desktop/openGL/glPaintTest/external/glfw/include"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 6,
 					"path" : "C:/Users/carli/Desktop/openGL/glPaintTest/glad"
 				},
 				{
@@ -108,10 +118,14 @@
 				},
 				{
 					"backtrace" : 5,
+					"path" : "C:/Users/carli/Desktop/openGL/glPaintTest"
+				},
+				{
+					"backtrace" : 6,
 					"path" : "C:/Users/carli/Desktop/openGL/glPaintTest/external/glfw/include"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 6,
 					"path" : "C:/Users/carli/Desktop/openGL/glPaintTest/glad"
 				},
 				{

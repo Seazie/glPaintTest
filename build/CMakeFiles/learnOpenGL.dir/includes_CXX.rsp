@@ -1,1 +1,1 @@
--IC:/Users/carli/Desktop/openGL/glPaintTest/glad/include -IC:/Users/carli/Desktop/openGL/glPaintTest/external/glfw/include -IC:/Users/carli/Desktop/openGL/glPaintTest/glad -IC:/Users/carli/Desktop/openGL/glPaintTest/libs/glfw/include
+-IC:/Users/carli/Desktop/openGL/glPaintTest/glad/include -IC:/Users/carli/Desktop/openGL/glPaintTest -IC:/Users/carli/Desktop/openGL/glPaintTest/external/glfw/include -IC:/Users/carli/Desktop/openGL/glPaintTest/glad -IC:/Users/carli/Desktop/openGL/glPaintTest/libs/glfw/include

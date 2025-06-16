@@ -58,35 +58,39 @@ class Shader
          checkCompileErrors(vertex, "VERTEX");
     }
     // use/activate the shader
-    void use();
+    void use()
+    {
+        glUseProgram(ID);
+    }
     // utility uniform function
     void setBool(const std::string &name, bool value) const;
     void setInt(const std::string &name, int value) const;
     void setFloat(const std::string &name, float value) const;
     
-};
-private:
-    void checkCompileErrors(unsigned int shader, string type)
-{
-    int success;
-    char infoLog[1024];
-    if (type != "PROGRAM")
+    private:
+        void checkCompileErrors(unsigned int shader, string type)
     {
-        glGetShaderiv(shader, GL_COMPILE_STATUS,  &success);
-        if (!success)
+        int success;
+        char infoLog[1024];
+        if (type != "PROGRAM")
         {
-            glGetShaderInfoLog(shader, 1024, NULL, infoLog);
-            cout << "ERROR::SHADER_COMPILATION_ERROR of type: " << type << "\n" << infoLog << endl;
+            glGetShaderiv(shader, GL_COMPILE_STATUS,  &success);
+            if (!success)
+            {
+                glGetShaderInfoLog(shader, 1024, NULL, infoLog);
+                cout << "ERROR::SHADER_COMPILATION_ERROR of type: " << type << "\n" << infoLog << endl;
+            }
         }
-    }
-    else{
-        glGetProgramiv(shader, 1024, NULL, infoLog);
-        if (!success)
-        {
-            glGetProgramInfoLog(shader, 1024, NULL, infoLog);
-            cout << "error::PROGRAM_LINKING_ERROR of type: " << type << "\n" << infoLog << endl;
+        else{
+            glGetProgramiv(shader, GL_LINK_STATUS, &success);
+            if (!success)
+            {
+                glGetProgramInfoLog(shader, 1024, NULL, infoLog);
+                cout << "error::PROGRAM_LINKING_ERROR of type: " << type << "\n" << infoLog << endl;
+            }
         }
     }
 };
+    
 
 #endif
