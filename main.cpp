@@ -35,7 +35,6 @@ int main()
 
     Shader ourShader("shaders/shader.vs", "shaders/shader.fs");
     
-
     float vertices[] = {
         0.0f, 0.5f, 0.0f, 1.0f, 0.0f, 0.0f,
         0.5, -0.5f, 0.0f, 0.0f, 1.0f, 0.0f,
@@ -56,7 +55,7 @@ int main()
     glEnableVertexAttribArray(0);
     //color attribute
     //we have an offset (at the end) because position holds 3 "indeces" first, so we have to skip those 3
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3* sizeof(float)));
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
     glEnableVertexAttribArray(1);
 
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);

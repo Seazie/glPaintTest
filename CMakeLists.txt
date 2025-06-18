@@ -9,7 +9,7 @@ add_executable(learnOpenGL main.cpp glad/src/glad.c)
 
 # Include directories
 include_directories(${CMAKE_SOURCE_DIR}/glad/include)
-include_directories(${CMAKE_SOURCE_DIR})
+#include_directories(${CMAKE_SOURCE_DIR}/shaders)
 target_include_directories(learnOpenGL PRIVATE external/glfw/include glad)
 
 # Link GLFW
